@@ -1,1 +1,2 @@
 "# Adverta.kz" 
+"# RIP" 
