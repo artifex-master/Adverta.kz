@@ -1,0 +1,287 @@
+:root {
+  /*** Colors ***/
+  --main-green: #224C4F;
+  --green-2: #192E33;
+  --green-3: #81BC5D;
+  --green-4: #E9EDED;
+  --green-5: #6A9194;
+  --green-mine: #224C4F;
+  --main-black: #181716;
+  --grey-1: #999999;
+  --grey-2: #d9d9d9;
+  --grey-3: #f2f2f2;
+  --grey-4: #f5f5f5;
+  --main-white: #ffffff;
+  --blue-1: #56B9F2;
+  --blue-2: #116ACC;
+  --blue-3: #1877F2;
+  --blue-4: #E7F0FA;
+  --main-red: #EA393A;
+  --yellow: #FBBC05;
+  --grey-light: #9C9C9C;
+  --black-earl: #181716;
+  --btn-more: #224C4F;
+  --body-color: #FAFAFA;
+
+  /** Typography **/
+  --mont-ff: 'Montserrat', sans-serif;
+  --popp-ff: 'Poppins', sans-serif;
+
+  --fs-h1: 40px;
+  --fs-h2: 30px;
+  --fs-h3: 24px;
+  --fs-txt1: 20px;
+  --fs-txt2: 16px;
+  --fs-txt3: 15px;
+  --fs-txt4: 14px;
+  
+  --fw-600: 600;
+  --fw-500: 500;
+}
+
+/**************************************************************************************
+  # REUSED
+***************************************************************************************/
+body {
+  background: var(--body-color);
+}
+
+.btn-auth {
+  background: var(--blue-2);
+  border-radius: 5px;
+  padding: 11px 28px;
+  color: var(--main-white);
+}
+
+.btn-sign-up {
+  background: var(--main-white);
+  border-radius: 5px;
+  padding: 11px 28px;
+  border: 1px solid var(--grey-2);
+}
+
+.btn-more {
+  font-family: var(--popp-ff);
+  border-radius: 5px;
+  font-size: var(--fs-txt4);
+  background: var(--btn-more);
+  padding: 12px 24px;
+  color: var(--main-white);
+}
+
+.btn-third {
+  background: var(--main-white);
+  padding: 15px 60px;
+  color: var(--main-green);
+  font-size: var(--fs-txt2);
+  border-radius: 6px;
+  font-weight: var(--fw-600);
+
+}
+
+h1 { font-size: var(--fs-h1); font-weight: var(--fw-500); line-height: 1;}
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+.p-1 { font-family: var(--popp-ff); font-size: var(--fs-txt1); line-height: 1.5; color: var(--green-mine); font-weight: var(--fw-600);}
+.p-2 { font-family: var(--popp-ff); font-size: var(--fs-txt4); color: var(--grey-light); }
+.p-3 { font-family: var(--popp-ff); font-size: var(--fs-txt4); color: var(--black-earl); font-weight: var(--fw-500); }
+
+
+
+
+header {
+  width: 100%;
+  background: var(--main-white);
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--fs-txt3);
+}
+
+.container, .navbar, ul, .btn-group {
+  display: flex;
+}
+
+.logo {
+  margin-right: 60px;
+}
+
+.navbar {
+  padding: 10px 20px;
+}
+
+li {
+  margin: 0 50px 0 0;
+}
+
+.navbar, .lang {
+  font-size: var(--fs-txt3);
+  color: var(--main-black);
+}
+
+.lang {
+  margin: 0 10px 0 50px;
+}
+
+.login {
+  margin-right: 20px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-cart {
+  margin-right: 30px;
+}
+
+.sh-cart-icon {
+  font-size: 25px;
+  position: absolute;
+}
+
+.sh-cart-counter {
+  padding: 6px;
+  background: var(--green-3);
+  border-radius: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 9px;
+  color: var(--main-white); 
+  position: relative;
+  left: 20px;
+  bottom: 5px;
+}
+
+/**************************************************************************************
+  # MAIN
+***************************************************************************************/
+
+#head {
+  position: absolute;
+}
+
+.head-gradient {
+  width: 100%;
+  height: 560px;
+  position: absolute;
+  background: linear-gradient(90.23deg, rgba(0, 0, 0, 0.89) 22.48%, rgba(0, 0, 0, 0) 85.26%);
+  z-index: 1;
+}
+
+.head-title {
+  margin: 100px 80px;
+  position: relative;
+  z-index: 10;
+  color: var(--main-white);
+  font-weight: var(--fw-500);
+}
+
+.head-title-subtxt {
+  margin: 60px 0;
+}
+
+/**************************************************************************************
+  # TRADITIONAL FUNERALS 
+***************************************************************************************/
+.trad-fun {
+  padding: 100px 80px;
+}
+.trad-fun-img {
+  width: 476px;
+  height: 300px;
+  border-radius: 10px;
+  margin-right: 20px;;
+}
+
+.trad-fun-container {
+  width: 100%;
+  height: 230px;
+  background: var(--grey-3);
+  padding: 30px 20px;
+  margin-top: 20px;
+}
+
+.fun-con-1{
+  position: absolute;
+  z-index: 10;
+}
+
+.trad-fun-main-title {
+  color: var(--green-mine);
+  font-size: var(--fs-h1);
+  font-family: var(--mont-ff);
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.fun-con-border {
+  height: 217px;
+  background: transparent;
+  border: 2px solid var(--yellow);
+  position: relative;
+  left: 35px;
+  z-index: -1;
+}
+
+#flowers {
+  position: relative;
+  bottom: 220px;
+  left: 52%;
+}
+
+/**************************************************************************************
+  # CEMETRIES 
+***************************************************************************************/
+.cemetries {
+  padding: 100px 80px;
+}
+
+.h-green {
+  font-family: var(--mont-ff);
+  color: var(--green-mine);
+  margin-bottom: 30px;
+}
+
+.cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cemetries-img {
+  width: 360px;
+  height: 250px;
+  border-radius: 8px;
+}
+
+.card-container {
+  display: block;
+  width: max-content;
+}
+
+.txt-block {
+  margin: 15px 5px;
+}
+
+.txt-block-title {
+  padding: 0 0 2px 0;
+}
+
+.txt-block-subt {
+  padding: 0 0 7px 0;
+}
+
+.txt-block-desc {
+  padding: 0 0 3px 0;
+}
+
+
+
+
+
